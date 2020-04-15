@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+    <meta http-equiv="Expires" content="0" />
+    <script>
+        // document.write("<link type='text/css' href='demo.css?version=" + new Date().getTime() + "' rel='stylesheet' />");
+    </script>
+</head>
+<body>
+    <div id="divPlugin" class="plugin"></div>
+    <input type="button" value="预览" onclick="iStartRealPlay()">
+    <input type="button" value="回放" onclick="playBack()">
+    <input type="button" value="stop" onclick="stopPlayback()">
+    <input type="button" value="恢复播放" onclick="iResume()">
+    <input type="button" value="倒放" onclick="reversePlayBack()">
+    <input type="button" value="单帧播放" onclick="iFrame()">
+    <input type="button" value="暂停播放" onclick="iPause()">
+    <input type="button" value="减速播放" onclick="iPlaySlow()">
+    <input type="button" value="加速播放" onclick="iPlayFast()">
+    <input type="button" value="OSD" onclick="getOSDTime()">
+    <input type="button" value="打开声音" onclick="openSound()">
+    <input type="button" value="关闭声音" onclick="closeSound()">
+    <input type="button" value="设置音量" onclick="setVolume()">
+    <input type="button" value="抓取图片" onclick="capturePic()">
+    <input type="button" value="获取本地参数" onclick="getLocalCfg()">
+
+    <input type="text" id="sTime" width="100px" value="2017-09-02 15:22:12">
+    <input type="text" id="eTime" width="100px" value="2017-09-02 15:32:12">
+</body>
+
+<script src="./jquery-1.7.1.min.js"></script>
+<script src="../codebase/webVideoCtrl.js"></script>
+<script src="./demo.js"></script>
+
+</html>
